@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    base: "https://github.com/tech-qasim/ultra-minimal-portfolio-site",  // ⬅️ VERY IMPORTANT FOR GITHUB PAGES
+    base: "/ultra-minimal-portfolio-site/",  // ⬅️ VERY IMPORTANT FOR GITHUB PAGES
 
     server: {
       port: 3000,
