@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, X } from 'lucide-react';
 import ContributionGraph from './components/ContributionGraph';
 import ExperienceTimeline from './components/ExperienceTimeline';
 import ProjectCard from './components/ProjectCard';
@@ -88,7 +88,7 @@ const App: React.FC = () => {
 
               <div className="space-y-5 text-lg text-neutral-400 leading-relaxed max-w-3xl">
                 <p>
-                  Hi! I’m a Software Engineer passionate about turning ideas into sleek, high-performing <strong className="text-neutral-200 font-medium">Flutter apps</strong>. Give me a challenge, and I’ll find a creative solution — it’s just how I think.
+                  I’m a Software Engineer passionate about turning ideas into sleek, high-performing <strong className="text-neutral-200 font-medium">mobile apps</strong>. Give me a challenge, and I’ll find a creative solution — it’s just how I think.
                 </p>
                 <p>
                   Outside of coding, I’m usually immersed in a thriller movie (<em>The Wailing</em> is my favorite) or listening to Talha Anjum and Seedhe Maut. I like to think my coding style mirrors that: smooth, precise, with a touch of suspense.
@@ -109,12 +109,15 @@ const App: React.FC = () => {
                 <a href="#" aria-label="Twitter" className="p-3 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-neutral-500 hover:bg-neutral-800 transition-all group">
                   <Twitter size={20} className="group-hover:text-white transition-colors" />
                 </a>
+                <a href="#" aria-label="Email" className="p-3 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-neutral-500 hover:bg-neutral-800 transition-all group">
+                  <Mail size={20} className="group-hover:text-white transition-colors" />
+                </a>
                 <div className="w-px h-10 bg-neutral-800 mx-1"></div>
                 <a href="#" aria-label="Spotify" className="flex items-center gap-2.5 p-3 md:px-5 md:py-3 rounded-xl bg-[#1DB954]/10 border border-[#1DB954]/20 hover:bg-[#1DB954]/20 hover:border-[#1DB954]/40 transition-all group">
                    <img src="https://cdn.simpleicons.org/spotify" className="w-5 h-5 group-hover:opacity-100 opacity-80 transition-opacity" alt="Spotify" />
                   <span className="text-sm font-medium text-[#1DB954] hidden md:block">Spotify</span>
                 </a>
-                <a href="#" aria-label="Letterboxd" className="flex items-center gap-2.5 p-3 md:px-5 md:py-3 rounded-xl bg-[#2C3440] border border-[#445566] hover:border-[#00E054] hover:text-[#00E054] transition-all group text-neutral-300">
+                <a href="#" aria-label="Letterboxd" className="flex items-center gap-2.5 p-3 md:px-5 md:py-3 rounded-xl bg-[#292f38] border border-[#445566] hover:border-[#606e82] transition-all group text-neutral-300">
                   <img src="https://cdn.simpleicons.org/letterboxd/d1d5db" className="w-5 h-5 group-hover:opacity-100 opacity-80 transition-opacity" alt="Letterboxd" />
                   <span className="text-sm font-medium hidden md:block">Letterboxd</span>
                 </a>
@@ -178,9 +181,6 @@ const App: React.FC = () => {
               </h2>
               <p className="text-sm text-neutral-500">Projects that define my technical capabilities.</p>
             </div>
-            <a href="#" className="text-sm font-mono text-neutral-400 hover:text-white hover:underline underline-offset-4">
-              View all archives &rarr;
-            </a>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -193,7 +193,7 @@ const App: React.FC = () => {
         </section>
 
         {/* CONTACT SECTION */}
-        <section id="contact" className="py-20 border-t border-neutral-900/50 mb-16">
+        <section id="contact" className="py-16 border-t border-neutral-900/50 mb-16">
           <div className="max-w-2xl mx-auto text-center space-y-8">
             <h2 className="text-4xl font-bold text-white tracking-tight">Let's build something <span className="text-neutral-600">extraordinary</span>.</h2>
             <p className="text-base text-neutral-400">
