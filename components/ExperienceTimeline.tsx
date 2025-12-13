@@ -28,7 +28,7 @@ const experiences: Experience[] = [
 
 const ExperienceTimeline: React.FC = () => {
   return (
-    <div className="relative w-full pb-0">
+    <div className="relative w-full pb-8">
       {/* Connecting Line - Aligned with the center of the dot */}
       <div className="absolute top-2 left-0 w-full h-[1px] bg-neutral-800 hidden md:block" />
       
